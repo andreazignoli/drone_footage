@@ -1,5 +1,7 @@
 movie/*
+movie/raw/*
 !movie/.gitkeep
+!movie/raw/.gitkeep
 
 GPS/*.txt
 
@@ -16,4 +18,6 @@ src/export_fig/*
 !src/export_fig/.gitkeep
 
 src/GPS_traj/*
-!src/GPS_traj/.gitkeep
+!src/GPS_traj/.gitkeeppi
+
+!pic/DJI_0132.JPG
