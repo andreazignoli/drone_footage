@@ -1,0 +1,7 @@
+movie/*
+!movie/.gitkeep
+
+*.png
+GPS/*.txt
+
+src/export_fig
