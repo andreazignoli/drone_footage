@@ -1,4 +1,4 @@
-# Insights in road cycling downhill performance using aerial drone footages and an 'optimal' reference trajectory
+# Insights in road cycling downhill performance using aerial drone footages and an 'optimal' reference trajectory
 
 👋 Hi, welcome to the project repository. 
 
@@ -7,5 +7,7 @@
 This study was conducted at the best of our abilities and intentions, with scientific rigour and integrity. 
 
 🙏 Please consider accidental any error included in the code provided with this repository or any misinterpretation of the findings included in the manuscript. 
+
+![Alt Text](https://drive.google.com/file/d/1xaWGRnI1qTIveHz2uvZNNqY0PvtQQEWN)
 
 ![pic](https://github.com/andreazignoli/drone_footage/blob/master/pic/DJI_0132.JPG)
