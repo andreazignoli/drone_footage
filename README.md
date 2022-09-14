@@ -48,7 +48,7 @@ The equation of motion for the normalized power output is:
 
 The equation of motion for the longitudinal speed is:
 
-![v](https://latex.codecogs.com/svg.latex?\frac{mv(s)}{W_{max}}\frac{d}{ds}v(s)=\frac{W_n(s)}{\dot{s}(s)}-\frac{v(s)}{\dot{s}(s)W_{max}}(mg[C_{rr}\cos(\beta(s))+\sin(\beta(s))]+k_v(v(s)-V_w(\alpha(s)))^2))
+![v](https://latex.codecogs.com/svg.latex?\tiny\frac{mv(s)}{W_{max}}\frac{d}{ds}v(s)=\frac{W_n(s)}{\dot{s}(s)}-\frac{v(s)}{\dot{s}(s)W_{max}}(mg[C_{rr}\cos(\beta(s))+\sin(\beta(s))]+k_v(v(s)-V_w(\alpha(s)))^2))
 
 ## Additional reading
 
