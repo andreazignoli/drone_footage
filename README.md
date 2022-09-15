@@ -65,4 +65,6 @@ This study was conducted at the best of our abilities and intentions, with scien
 
 🙏 Please consider accidental any error included in the code provided with this repository or any misinterpretation of the findings included in the manuscript. 
 
+![gif](https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif)
+
 ![pic](https://github.com/andreazignoli/drone_footage/blob/master/pic/DJI_0132.JPG)
