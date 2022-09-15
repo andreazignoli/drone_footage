@@ -10,6 +10,10 @@ A new methodology to study performance in downhill road cycling is presented her
 
 The code used for the motion capture position detection is of course provided with this repository. Additionally, you can find the files of the 🚁 videos at this [link](https://drive.google.com/drive/folders/1z8yeZPSoOn0l1lVK-wkxGGMYXhY3we03?usp=sharing). 
 
+<p align="center">
+<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="400"/>
+</p>
+
 ## Mathematical model of bike-rider dynamics
 
 The bike-rider model includes a number of differential equations. The reader is invited to read the 'Additional reading' papers (links below) for definition of the symbols and of the parameters.
@@ -65,7 +69,6 @@ This study was conducted at the best of our abilities and intentions, with scien
 
 🙏 Please consider accidental any error included in the code provided with this repository or any misinterpretation of the findings included in the manuscript. 
 
-<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="100" class="center"/>
-
-<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/DJI_0132.JPG" width="100" class="center"/>
-
+<p align="center">
+<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/DJI_0132.JPG" width="400"/>
+</p>
