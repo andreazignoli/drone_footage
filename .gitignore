@@ -21,4 +21,5 @@ src/GPS_traj/*
 !src/GPS_traj/.gitkeeppi
 
 !pic/DJI_0132.JPG
+!pic/comparison.png
 !pic/rotated.gif

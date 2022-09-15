@@ -12,6 +12,7 @@ The code used for the motion capture position detection is of course provided wi
 
 <p align="center">
 <img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="400"/>
+<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/comparison.png" width="400"/>
 </p>
 
 ## Mathematical model of bike-rider dynamics
@@ -65,6 +66,10 @@ In the following papers, reference values and definitions of all parameters and 
 * [An intelligent curve warning system for road cycling races](https://link.springer.com/article/10.1007/s12283-021-00356-z)
 
 * [Assessment of bike handling during cycling individual time trials with a novel analytical technique adapted from motorcycle racing](https://www.tandfonline.com/doi/full/10.1080/17461391.2021.1966517)
+
+* [Notes on bike handling in road cycling](https://andreazignoli.github.io/blog-post-4/) - blog article
+
+* [Verona ITT: the perfect combination of power output and bike handling abilities](https://rpubs.com/andrea_zignoli/verona_ITT_2019_vs_2022) - blog article
 
 # Disclosure statement
 
