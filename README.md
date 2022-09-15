@@ -56,12 +56,15 @@ The equation of motion for the longitudinal speed is:
 
 ## Additional reading
 
-In the following papers, reference values and definitions of all parameters and variables are provided. 
+In the following papers, reference values and definitions of all parameters and variables are provided. Additionally, more details are provided around the rationale and possible applications of related technologies. 
 
-[Prediction of pacing and cornering strategies during cycling individual time trials with optimal control](https://link.springer.com/article/10.1007/s12283-020-00326-x)
+* [Prediction of pacing and cornering strategies during cycling individual time trials with optimal control](https://link.springer.com/article/10.1007/s12283-020-00326-x)
 
-[Influence of corners and road conditions on cycling individual time trial performance and ‘optimal’pacing strategy: A simulation study](https://journals.sagepub.com/doi/abs/10.1177/1754337120974872)
+* [Influence of corners and road conditions on cycling individual time trial performance and ‘optimal’pacing strategy: A simulation study](https://journals.sagepub.com/doi/abs/10.1177/1754337120974872)
 
+* [An intelligent curve warning system for road cycling races](https://link.springer.com/article/10.1007/s12283-021-00356-z)
+
+* [Assessment of bike handling during cycling individual time trials with a novel analytical technique adapted from motorcycle racing](https://www.tandfonline.com/doi/full/10.1080/17461391.2021.1966517)
 
 # Disclosure statement
 
@@ -72,3 +75,8 @@ This study was conducted at the best of our abilities and intentions, with scien
 <p align="center">
 <img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/DJI_0132.JPG" width="400"/>
 </p>
+
+# Contributors
+
+* [Andrea Zignoli](https://webapps.unitn.it/du/en/Persona/PER0025348/Pubblicazioni)
+* [Damiano Fruet](https://webapps.unitn.it/du/en/Persona/PER0049442/Pubblicazioni)
