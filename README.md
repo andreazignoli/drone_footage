@@ -11,7 +11,7 @@ A new methodology to study performance in downhill road cycling is presented her
 The code used for the motion capture position detection is of course provided with this repository. Additionally, you can find the files of the 🚁 videos at this [link](https://drive.google.com/drive/folders/1z8yeZPSoOn0l1lVK-wkxGGMYXhY3we03?usp=sharing). 
 
 <p align="center">
-<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="400"/>
+<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="400" height="650"/>
 <img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/comparison.png" width="400"/>
 </p>
 
