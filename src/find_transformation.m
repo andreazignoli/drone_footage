@@ -9,26 +9,19 @@ b = x(2);
 c = x(3);
 d = x(4);
 e = x(5);
-f = x(6);
-g = x(7);
-h = x(8);
-i = x(9);
 
 % rotation matrices
-RX = rotx(a);
-RY = roty(b);
-RZ = rotz(c);
+RZ = rotz(a);
 
 % scale
-u1      = [u(:,1) * d u(:,2) * e u(:,3) * f];
+u1      = [u(:,1) * b u(:,2) * c];
 % pure translations
 u2      = u1;
-u2(:,1) = u1(:,1) + g;
-u2(:,2) = u1(:,2) + h;
-u2(:,3) = u1(:,3) + i;
+u2(:,1) = u1(:,1) + d;
+u2(:,2) = u1(:,2) + e;
 
 % rotations
-u3  = u2 * RX * RY * RZ;
+u3  = [u2 zeros(length(u2),1)] * RZ;
 
 % objective function
 distance(1) = 0;
@@ -36,4 +29,4 @@ for i = 2: length(u)
     distance(i) = distance_points([u3(i); u3(i); 0],[v(i-1); v(i-1); 0]);
 end
 
-L = sumsqr(distance);
+L = sum(distance.^2);

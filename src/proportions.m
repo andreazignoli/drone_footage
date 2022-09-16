@@ -34,15 +34,15 @@ z0              = z0';
 % close all
 % 
 % options = optimset('Display','iter');
-% lb = [-5 175 80 0.05 0.05 0.07 -70 -75 -5];
-% ub = [5 185 90 0.06 0.06 0.08 -66 -70 0];
+% lb      = [-5 175 80 0.05 0.05 -70 -75];
+% ub      = [5 185 90 0.06 0.06 -66 -70];
 % 
+% first_guess = [180 90 0.05 0.05 -66 -70];
 % 
+% fun     = @(x)find_transformation(x, [X Y], [x0 y0]);
+% x_opt   = fmincon(fun, first_guess, [], [], [], [], [], [, [], options);
 % 
-% fun = @(x)find_transformation(x, [X Y zeros(length(Z), 1)], [x0 y0 zeros(length(Z), 1)]);
-% % x_opt = fmincon(fun, first_guess, [], [], [], [], lb, ub, [], options);
-% 
-% gs = GlobalSearch;
+% gs      = GlobalSearch;
 % problem = createOptimProblem('fmincon', 'x0', first_guess,...
 %     'objective', fun, 'lb', lb, 'ub', ub);
 % 
@@ -54,25 +54,25 @@ v = [X Y zeros(length(Z), 1)];
 u = [x0 y0 zeros(length(Z), 1)];
 % example
 load trial1_trajectory_AERIAL
-t1 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t1 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial2_trajectory_AERIAL
-t2 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t2 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial3_trajectory_AERIAL
-t3 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t3 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial4_trajectory_AERIAL
-t4 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t4 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial5_trajectory_AERIAL
-t5 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t5 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial6_trajectory_AERIAL
-t6 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t6 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial7_trajectory_AERIAL
-t7 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
+t7 = [trajectory(:,1) trajectory(:,2)];
 clear trajectory
 load trial8_trajectory_AERIAL
 t8 = [trajectory(:,1) trajectory(:,2) zeros(length(trajectory(:,1)), 1)];
@@ -88,17 +88,18 @@ first_guess_1_5 = [0 180 85 0.0543 0.0535 0.075 -66 -70 0];
 first_guess_6_10 = [0 180 84.5 0.0543 0.0537 0.075 -62 -71 0];
 
 % test paraeters
-u3 = apply_linear_transformation(u,   first_guess_6_10);
-t11 = apply_linear_transformation(t1, first_guess_1_5);
-t21 = apply_linear_transformation(t2, first_guess_1_5);
-t31 = apply_linear_transformation(t3, first_guess_1_5);
-t41 = apply_linear_transformation(t4, first_guess_1_5);
-t51 = apply_linear_transformation(t5, first_guess_1_5);
-t61 = apply_linear_transformation(t6, first_guess_6_10);
-t71 = apply_linear_transformation(t7, first_guess_6_10);
-t81 = apply_linear_transformation(t8, first_guess_6_10);
-t91 = apply_linear_transformation(t8, first_guess_6_10);
-t101 = apply_linear_transformation(t8, first_guess_6_10);
+
+t11     = apply_linear_transformation(t1, first_guess_1_5);
+t21     = apply_linear_transformation(t2, first_guess_1_5);
+t31     = apply_linear_transformation(t3, first_guess_1_5);
+t41     = apply_linear_transformation(t4, first_guess_1_5);
+t51     = apply_linear_transformation(t5, first_guess_1_5);
+t61     = apply_linear_transformation(t6, first_guess_6_10);
+t71     = apply_linear_transformation(t7, first_guess_6_10);
+t81     = apply_linear_transformation(t8, first_guess_6_10);
+t91     = apply_linear_transformation(t8, first_guess_6_10);
+t101    = apply_linear_transformation(t8, first_guess_6_10);
+u3      = apply_linear_transformation(u,  first_guess_6_10);
 
 hold on
 cla

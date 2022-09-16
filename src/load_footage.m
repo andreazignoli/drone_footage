@@ -219,7 +219,7 @@ end
 close(writerObj);
 close all
 
-return
+% return
 
 %% process the trajectory
 
@@ -230,7 +230,6 @@ tform                   = fitgeotrans([x0 y0], [X Y], 'similarity');
 
 % real_trajectory         = [trajectory ones(length(trajectory),1)] * tform.T;
 midline_video           = [x0 y0 ones(length(x0),1)] * tform.T;
-
 
 
 %%
@@ -245,7 +244,7 @@ axis equal
 xAERIAL = real_trajectory(:,1);
 yAERIAL = real_trajectory(:,2);
 
-save(['traj_', file(1:end-4)], 'xAERIAL', 'yAERIAL');
+save(['v2_traj_', file(1:end-4)], 'xAERIAL', 'yAERIAL');
 
 
 

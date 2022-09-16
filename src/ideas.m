@@ -1,6 +1,84 @@
 clc
 clear all
 
+Figure_Settings
+
+addpath('../Bezier-minq');
+addpath('../G1fitting');
+addpath('../functions');
+addpath('export_fig');
+addpath('drone_traj');
+addpath('GPS_traj');
+addpath('../../redebus/ocp-road-sprint-bio-model/data')
+addpath('drone_traj')
+
+load trial1_trajectory_AERIAL.mat
+
+%%
+geom_apex1  = 60;
+geom_apex2  = 163;
+% specify road width
+road_width      = 14;
+semi_road_width = road_width/2;
+load redebus_XY
+%first_guess_1_5     = [0 180 85 0.0543 0.0535 0.075 -66 -70 0];
+%first_guess_6_10    = [0 180 84.5 0.0543 0.0537 0.075 -62 -71 0];
+first_guess_1_5     = [0 180 80     0.0543 0.0503 0.075 -66 -70 0];
+first_guess_6_10    = [0 180 84.5   0.0543 0.0537 0.075 -62 -71 0];
+X = flip(X);
+Y = flip(Y);
+[d_traj,    theta_traj,     x_traj,     y_traj] = fit_xy(X,Y,1);
+d_traj(diff(d_traj)==0)=[];
+
+%% mat files have a structure with time|ibi|sbp inside
+files = uigetfile('drone_traj/.mat', 'Select data files', 'MultiSelect', 'on');
+
+if ~iscell(files)
+    files = {files};
+end %now filename is a cell array regardless of the number of selected files.
+
+figure(1);
+hold on
+axis equal
+fig1. Position = [100 100 800 800];
+
+hold on
+% rectangle('Position',[-100, -100, 200, 200], 'FaceColor', [colForestGreen 0.5], 'EdgeColor', 'none',...
+%     'LineWidth',3)
+% plot(x_traj, y_traj,    'linewidth', 80, 'color', [colSilver 0.1])
+text(X(end), Y(end),    ' Finish')
+text(X(1), Y(1),        ' Start')
+% plot(X, Y, 'o')
+
+% for i = 1:length(X)
+%     text(X(i), Y(i), num2str(round(raw_distance(i))), 'fontsize', 4);
+% end
+
+plot(x_traj, y_traj, '--', 'linewidth', 2, 'color', colSilver)
+
+plot(x_traj - sin(theta_traj) * semi_road_width, y_traj + cos(theta_traj) * semi_road_width, 'linewidth', 2, 'color', colSlateGray)
+plot(x_traj + sin(theta_traj) * semi_road_width, y_traj - cos(theta_traj) * semi_road_width, 'linewidth', 2, 'color', colSlateGray)
+
+for i = 1:length(files)
+    % load the files (multiple selection)
+    load(files{i});
+    if i > 5
+        first_guess = first_guess_6_10;
+    else
+        first_guess = first_guess_1_5;
+    end
+    
+    traj_struct = traj_prop(trajectory, x_traj, y_traj, d_traj, geom_apex1, geom_apex2, first_guess, 'drone');
+
+    plot(traj_struct.x2_int', traj_struct.y2_int', 'linewidth', 3, 'color', [colDodgerBlue 0.5])
+end
+
+
+
+
+
+return
+
 x = -5:0.01:5;
 
 a = 0.8;
