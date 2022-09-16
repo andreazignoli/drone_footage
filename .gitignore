@@ -10,6 +10,7 @@ GPS/*.txt
 *.mp4
 *.tcx
 *.mat
+*.asv
 
 src/drone_traj/*
 !src/drone_traj/.gitkeep
