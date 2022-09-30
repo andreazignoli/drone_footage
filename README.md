@@ -12,7 +12,6 @@ The code used for the motion capture position detection is of course provided wi
 
 <p align="center">
 <img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/rotated.gif" width="400" height="650"/>
-<img src="https://github.com/andreazignoli/drone_footage/blob/master/pic/comparison.png" width="400"/>
 </p>
 
 ## Mathematical model of bike-rider dynamics
